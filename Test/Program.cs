@@ -19,7 +19,7 @@ namespace Test
             {
                 Application application = new Application();
                 var document = application.Documents.Add();
-                document.Content.Text = "TEST";
+                document.Content.Text = "TEST2";
                 document.SaveAs2(Path.GetFullPath($@"..\..\..\Чеки\{DateTime.Now.ToString("yyyyMMdd_HH mm ss")}.docx"));
                 document.Close();
                 application.Quit();
